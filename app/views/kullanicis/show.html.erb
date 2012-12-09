@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ad:</b>
+  <%= @kullanici.ad %>
+</p>
+
+<p>
+  <b>Soyad:</b>
+  <%= @kullanici.soyad %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @kullanici.email %>
+</p>
+
+<p>
+  <b>Adres:</b>
+  <%= @kullanici.adres %>
+</p>
+
+
+<%= link_to 'Edit', edit_kullanici_path(@kullanici) %> |
+<%= link_to 'Back', kullanicis_path %>

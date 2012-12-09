@@ -1,0 +1,33 @@
+<%= form_for(@kullanici) do |f| %>
+  <% if @kullanici.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kullanici.errors.count, "error") %> prohibited this kullanici from being saved:</h2>
+
+      <ul>
+      <% @kullanici.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ad %><br />
+    <%= f.text_field :ad %>
+  </div>
+  <div class="field">
+    <%= f.label :soyad %><br />
+    <%= f.text_field :soyad %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :adres %><br />
+    <%= f.text_area :adres %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
