@@ -5,6 +5,7 @@ class CreateKullanicis < ActiveRecord::Migration
       t.string :soyad
       t.string :email
       t.text :adres
+      t.text :emailkontrol
 
       t.timestamps
     end

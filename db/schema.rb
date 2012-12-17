@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121209082659) do
+ActiveRecord::Schema.define(:version => 20121217214741) do
 
   create_table "kullanicis", :force => true do |t|
     t.string   "ad"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20121209082659) do
     t.text     "adres"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "telefon"
   end
 
 end
